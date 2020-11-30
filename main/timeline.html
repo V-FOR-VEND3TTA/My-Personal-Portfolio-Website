@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My programming timeline</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 2rem;
+      color: #fff;
+    }
+
+    h2 {
+      color: #0a8ab1f1;
+      text-align: center;
+      text-shadow: inset 0px 0px 0px 2px #111;
+    }
+
+    h1 span {
+      color: #0a8ab1f1;
+      text-shadow: 3px 3px #111;
+    }
+
+    p {
+      color: #fff;
+      padding: 0.5rem;
+    }
+
+    body {
+      background: #444;
+      font-family: "Trebuchet MS", sans-serif;
+    }
+
+    .timeline {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .timeline::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: #fff;
+      left: 50%;
+      margin-left: -3px;
+    }
+
+    .container {
+      padding: 10px 40px;
+      position: relative;
+      width: 50%;
+    }
+
+    .container::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background: #fff;
+      top: 15px;
+      right: -17px;
+      border-radius: 50%;
+      border: 4px solid #0a8ab1f1;
+    }
+
+    .left {
+      left: 0;
+    }
+    .right {
+      left: 50%;
+    }
+
+    .right::after {
+      left: -16px;
+    }
+
+    .left::before {
+      content: "";
+      height: 0px;
+      width: 0px;
+      position: absolute;
+      top: 22px;
+      right: 30px;
+      border: 10px solid #fff;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent transparent transparent #222;
+    }
+    .right::before {
+      content: "";
+      height: 0px;
+      width: 0px;
+      position: absolute;
+      top: 22px;
+      left: 30px;
+      border: 10px solid #222;
+      border-color: transparent #222 transparent transparent;
+      border-width: 10px 10px 10px 0px;
+    }
+
+    .content {
+      padding: 20px 30px;
+      background: #222;
+      border-radius: 6px;
+    }
+    /* Mobile version */
+    @media screen and (max-width: 480px) {
+      .timeline::before {
+        left: 2rem;
+      }
+      .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+      }
+
+      .container::before {
+        left: 4rem;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #222 transparent transparent;
+      }
+
+      .left::after,
+      .right::after {
+        left: 15px;
+        z-index: 1;
+      }
+      .right {
+        left: 0;
+      }
+    }
+
+    /* At a lower */
+  </style>
+  <body>
+    <!--Pointer of what this is-->
+    <h1>A <span>brief history</span> of my time...</h1>
+    <div class="timeline">
+      <!--Recently building API's with Django-->
+      <div class="container left">
+        <div class="content">
+          <h2>2020 (now)</h2>
+          <p>
+            Learning TypeScript for side projects. Currently building a full
+            stack application using Vue.js and Node.js.
+          </p>
+        </div>
+      </div>
+      <!--Internship at Akili-->
+      <div class="container right">
+        <div class="content">
+          <h2>2020, June 1st</h2>
+          <p>
+            Continuation of the CapaCiTi internship... I was deployed to a
+            CapaCiTi partner that gave us a 6 month work experience. I worked as
+            a Django backend developer who dabbled in PHP per the requirements
+            of the software we built using Wordpress just to push out an MVP.
+          </p>
+        </div>
+      </div>
+
+      <!--Internship at CapaCiTi-->
+      <div class="container left">
+        <div class="content">
+          <h2>2019, December 3rd</h2>
+          <p>
+            I signed a contract at CapaCiTi. Seemingly, all my efforts paid off
+            and I got an internship for the first interview I've ever been on.
+            The beginning of promising things, I even became web development
+            team lead in the first half of the internship as we were building a
+            website for a school that is digitizing.
+          </p>
+        </div>
+      </div>
+
+      <!--Thinking of becoming freelance or starting a YouTube channel-->
+      <div class="container right">
+        <div class="content">
+          <h2>2019, August</h2>
+          <p>
+            This period of my life was heavily inspired a book I hold very near
+            and dear to my heart...Python Tricks: A Buffet of Awesome Python
+            Features. It laid some of the foundations that started me on my
+            journey to learning Django, especially the section on Classes &
+            Object Oriented Programming. I also wish someone told me to have a
+            stronghold on version control and that building projects was the
+            best way to learn programming. Again, lessons learned... Also, with
+            the discovery that I can be compensated for my writing code, I put
+            in even more effort to learn about the industry as a whole. I
+            contemplated being a freelance developer, a YouTuber, or an
+            employee. Since I didn't know much, I vied for freelance because of
+            the flexible schedule it offered. Not to be though...
+          </p>
+        </div>
+      </div>
+
+      <!--Computer Science distilled and How Computers Work-->
+      <div class="container left">
+        <div class="content">
+          <h2>2019, February</h2>
+          <p>
+            There are layers to this thing. Data structures and algorithms have
+            made me a better programmer and abstract as they are, they have made
+            me enjoy programminng a lot more because I had a look under the
+            hood. The books which have been the most influential are How
+            Computers Work: The Evolution of Technology, The Computer Book: From
+            The Abacus to Artificial Intelligence, 250 Milestones in the History
+            of Computer Science, Eloquent JavaScript and Computer Science
+            Distilled. All I needed to feel comfortable with programming was
+            solidified around this time.
+          </p>
+        </div>
+      </div>
+      <!--JavaScript-->
+      <div class="container right">
+        <div class="content">
+          <h2>2018, July</h2>
+          <p>
+            What has two thumbs and doesn't know what to study next after Python
+            ? This guy! (referring to me) To be honest, learning JavaScript
+            right after Python was a mistake. I still weep to this day. I should
+            have asked for directions again. I thought I had figured it out. The
+            truth is that in programming, especially in programming you are
+            always figuring it out. All was not lost though, I course corrected
+            and used a book called HTML and CSS: Build and Design websites by
+            John Duckett. With lessons learned, I used another book by the same
+            author called JavaScript & jQuery. Boom! Just like that front end
+            web development on lock. Or so I thought...I still had to go through
+            Mount React.
+          </p>
+        </div>
+      </div>
+      <!--The love bug -Python-->
+      <div class="container left">
+        <div class="content">
+          <h2>2018, early March</h2>
+          <p>
+            My journey to relearn programming after a 10 year hiatus begins here
+            with Python. I had asked for advice on coding forums and the advice
+            I was given was that I should have a timeline. We live in a world of
+            abundance and there was so much information to even start. But I
+            dialled in into one course and one book. Less is more.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
