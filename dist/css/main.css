@@ -448,6 +448,7 @@ main#home h1 {
     flex-direction: row;
     justify-content: center;
   }
+
   div .text-secondary {
     width: 80%;
     text-align: center;
