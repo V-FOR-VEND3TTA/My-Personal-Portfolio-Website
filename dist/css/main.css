@@ -228,6 +228,9 @@ main#home h1 {
 }
 
 /* Scheduling icon and its link */
+.schedule-blue {
+  font-size: 24px;
+}
 .schedule-blue:hover {
   color: dodgerblue;
 }
