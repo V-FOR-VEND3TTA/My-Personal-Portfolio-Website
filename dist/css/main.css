@@ -227,6 +227,11 @@ main#home h1 {
   margin-top: 20vh;
 }
 
+/* Scheduling icon and its link */
+.schedule-blue:hover {
+  color: dodgerblue;
+}
+
 .about-info {
   display: grid;
   gap: 30px;
