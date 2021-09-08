@@ -8,6 +8,9 @@ Keep It Simple Stupid-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Welcome to Geohot's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="dist/css/main.css" />
+    <!--Preloader animation-->
+    <link rel="stylesheet" type="text/css" href="dist/css/loader.css" />
+    <!--Font awesome icons-->    
     <link href="dist/fonts/css/all.css" rel="stylesheet" />
   </head>
 
@@ -17,6 +20,15 @@ Keep It Simple Stupid-->
         <div class="btn-line"></div>
         <div class="btn-line"></div>
         <div class="btn-line"></div>
+      </div>
+
+      <!--preloader animation-->
+      <div class="bouncer-wrapper">
+        <div class="bouncer">
+          <div></div>
+		      <div></div>
+		      <div></div>
+        </div>
       </div>
 
       <nav class="menu">
@@ -80,5 +92,13 @@ Keep It Simple Stupid-->
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <div class="elfsight-app-b3f8b423-eb3e-4545-9e55-2082c8d90b07"></div>-->
     <script src="dist/js/main.js"></script>
+    <!--loader script-->
+    <script>
+      let bouncerWrapper = document.querySelector('.bouncer-wrapper');
+
+      window.addEventListener('load', function () {
+        bouncerWrapper.parentElement.removeChild(bouncerWrapper)
+      });
+    </script>
   </body>
 </html>
